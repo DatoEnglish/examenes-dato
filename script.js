@@ -11,7 +11,7 @@ const correctAnswers = {
 };
 
 // Enlace de envío directo al formulario (no el de edición ni el corto)
-const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfx9M3bFssjzi3DA1DnAZ1_rvFF8L1BTAYqt9q5UynJKShXHw/formResponse';
+const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLScQ04TJvQxsacp9BcPlcDj-vS9DjgkU7nwC76pBH-SIiGVokQ/viewform';
 
 document.getElementById("submit-button").addEventListener("click", function () {
   const formData = new FormData();
