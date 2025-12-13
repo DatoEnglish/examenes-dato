@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern English Test (20 Questions)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a3b70;
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+        .question-container {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .option:hover {
+            background-color: #fff1ed;
+        }
+        .option.selected {
+            background-color: #ffcebf;
+            border-color: #ff683b;
+        }
+        .option.correct {
+            background-color: #bbf7d0;
+            border-color: #22c55e;
+        }
+        .option.incorrect {
+            background-color: #fecaca;
+            border-color: #ef4444;
+        }
+        .custom-orange {
+            color: #ff683b;
+        }
+        .custom-orange-bg {
+            background-color: #ff683b;
+        }
+        .custom-orange-hover:hover {
+            background-color: #e55a32;
+        }
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="logo-container">
+        <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="120" height="40" rx="8" fill="#ff683b"></rect>
+            <text x="60" y="25" font-family="Poppins, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DATO</text>
+        </svg>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div id="test-container">
+            <div id="student-info" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h1 class="text-3xl font-bold text-center custom-orange mb-6">Intern English Level Test</h1>
+                <p class="text-center text-gray-500 mb-6">20 Questions - Single Section</p>
+                <div class="space-y-4">
+                    <div class="flex flex-col">
+                        <label for="student-name" class="text-gray-700 font-medium mb-1">Nombre Aplicante:</label>
+                        <input type="text" id="student-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="student-id" class="text-gray-700 font-medium mb-1">Email Aplicante:</label>
+                        <input type="text" id="student-id" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="teacher-name" class="text-gray-700 font-medium mb-1">Nombre Asesor:</label>
+                        <input type="text" id="teacher-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <button id="start-test" class="w-full custom-orange-bg text-white font-medium py-2 px-4 rounded-md custom-orange-hover transition duration-300 mt-4">Start Test</button>
+                </div>
+            </div>
+
+            <div id="test-progress" class="bg-white rounded-lg shadow-lg p-6 mb-8 hidden">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 id="section-title" class="text-xl font-semibold custom-orange">General Knowledge</h2>
+                    <span id="progress-text" class="text-gray-600">Question 1 of 20</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="progress-bar custom-orange-bg h-2.5 rounded-full" style="width: 5%"></div>
+                </div>
+            </div>
+
+            <div id="test-content" class="hidden">
+                <div id="questions-section" class="space-y-8">
+                    
+                    <div id="question-1" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">1. Complete the conversation with the words: Victor ____ smart. He's friendly too</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) it is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Isn't</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) he is</div>
+                        </div>
+                    </div>
+
+                    <div id="question-2" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">2. Complete the conversation with the words: Angie _____ 17. She's only 15</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) are not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) 's</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) isn't</div>
+                        </div>
+                    </div>
+
+                    <div id="question-3" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">3. Complete the conversation with the words: They ___ from Toronto. They're from Vancouver</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) is not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) are not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) are</div>
+                        </div>
+                    </div>
+
+                    <div id="question-4" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">4. Complete the sentences with can or can't: I _____ ridea bike because I don't have a bike to practice.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) can't</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) can</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) ambas</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-5" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">5. Complete the sentences with can or can't: My dog _____ fetch the ball. He's a really good dog</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) can't</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) can</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) ambas</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-6" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">6. Complete the sentences with can or can't: I _____ play video games on my computer it's really old.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) can't</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) can</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) ambas</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-7" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">7. Write the correct adjective (a or an) according to the noun: elephant</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) A elephant</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) An elephant</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) A/An elephant</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-8" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">8. Write the correct adjective (a or an) according to the noun: ball</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) A ball</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) An ball</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) A/An ball</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-9" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">9. Complete the conversation with the words.</h3>
+                        <p class="mb-2"><strong>A:</strong> _____ you _____songs? </p>
+                        <p><strong>B:</strong>Yes I sometimes ______</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Do / write / wrote</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Does / write / write</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Do / write / write</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Do / write / writing</div>
+                        </div>
+                    </div>
+
+                    <div id="question-10" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">10. Complete the conversation with the words.</h3>
+                        <p class="mb-2"><strong>A:</strong> Where ____ you usually _____ at night ? </p>
+                        <p><strong>B:</strong>I Usually _____ in a bunk.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Does / sleep / sleep</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Do / sleep / slept</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Do / sleep / sleeping</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Do / sleep / sleep</div>
+                        </div>
+                    </div>
+
+                    <div id="question-11" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">11. Complete the conversation with the words.</h3>
+                        <p class="mb-2"><strong>A:</strong> ____ your uncle _____ as a chef? </p>
+                        <p><strong>B:</strong>Yes, he _____ at a restaurant.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Does / work / work</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Do / work / working</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Does / work / works</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Do / work / works</div>
+                        </div>
+                    </div>
+
+                    <div id="question-12" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">12. Complete the sentence: "That is ___ backpack, She keeps her books __ it for school."</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) his / in</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) her / in</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) her / on</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) his / on</div>
+                        </div>
+                    </div>
+
+                    <div id="question-13" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">13. Complete the sentence: "He _____ Mexican. ___ wife is from Guadalajara but he __ from New York"</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Is not / the / is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Is / his / is not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Is / the / is not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Is not / his / is </div>
+                        </div>
+                    </div>
+
+                   <div id="question-14" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">14. Complete the conversation with the words.</h3>
+                        <p class="mb-2"><strong>A:</strong> ____ you hungry?</p>
+                        <p><strong>B:</strong>No, ______.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Are / I'm not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Is / I'm not</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Are / it is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Aren't / I am </div>
+                        </div>
+                    </div>
+
+                    <div id="question-15" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">15. Choose the correct sentence:</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) You are a Lawyer?</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Are you a Lawyer?</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Is you a Lawyer?</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) You is a Lawyer</div>
+                        </div>
+                    </div>
+
+                    <div id="question-16" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">16. Complete the conversation with the words:</h3>
+                        <p class="mb-2"><strong>A:</strong> ____ your business in Peru.</p>
+                        <p><strong>B:</strong> Yes, ____.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Is / I am</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Are / It is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Isn't / Is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Is / It is</div>
+                        </div>
+                    </div>
+
+                    <div id="question-17" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">17. Choose the correct sentence:</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Hello! My name is Roberto. I is an architect</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Hello! His name is Roberto. I am an architect</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Hello! My name is Roberto. I am an architect</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Hello! My name are Roberto. I are an architect</div>
+                        </div>
+                    </div>
+
+                    <div id="question-18" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">18. Choose the correct options in the simple past to complete the conversation: I ___ to the movies with my girlfriend.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) was going</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) went</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) did go</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) didn't go</div>
+                        </div>
+                    </div>
+
+                    <div id="question-19" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">19. Choose the correct options in the simple past to complete the conversation: How ____ your holiday ?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) were</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) did</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) is</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) was</div>
+                        </div>
+                    </div>
+
+                    <div id="question-20" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">20. Choose the correct options in the simple past to complete the conversation: I ____ to Cancun with my family </h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) traveled</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) did travel</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) went travel</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) was traveling</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                    <button id="prev-btn" class="bg-gray-500 text-white font-medium py-2 px-6 rounded-md hover:bg-gray-600 transition duration-300">Previous</button>
+                    <button id="next-btn" class="custom-orange-bg text-white font-medium py-2 px-6 rounded-md custom-orange-hover transition duration-300">Next</button>
+                </div>
+            </div>
+
+            <div id="results-section" class="hidden bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-center custom-orange mb-6">Test Results</h2>
+                <div id="student-info-display" class="mb-6 p-4 bg-gray-50 rounded-md">
+                    <p><strong>Student Name:</strong> <span id="result-student-name"></span></p>
+                    <p><strong>Student's Email:</strong> <span id="result-student-id"></span></p>
+                    <p><strong>Teacher's Name:</strong> <span id="result-teacher-name"></span></p>
+                    <p><strong>Date:</strong> <span id="result-date"></span></p>
+                    <p><strong>Test Type:</strong> <span>Short Placement (20Q)</span></p>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Overall Score</h3>
+                        <span id="overall-score" class="text-xl font-bold custom-orange">0/100</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div id="overall-progress" class="custom-orange-bg h-4 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Detailed Results</h3>
+                    <div class="space-y-6">
+                        <div id="results-details" class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-medium mb-2">Answers</h4>
+                            <div id="all-questions-details" class="space-y-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button id="send-results" class="custom-orange-bg text-white font-medium py-2 px-6 rounded-md custom-orange-hover transition duration-300">Send Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Test data - Reduced to 20 Questions
+            const correctAnswers = {
+                1: "C", 2: "D", 3: "B", 4: "A", 5: "B", 
+                6: "A", 7: "B", 8: "A", 9: "C", 10: "D",
+                11: "C", 12: "B", 13: "D", 14: "A", 15: "B", 
+                16: "D", 17: "C", 18: "B", 19: "D", 20: "A"
+            };
+
+            // Full text of correct answers for 1-20
+            const correctAnswerText = {
+                1: "is",
+                2: "isn't",
+                3: "are not",
+                4: "can't",
+                5: "can",
+                6: "can't",
+                7: "An elephant",
+                8: "A ball",
+                9: "Do / write / write",
+                10: "Do / sleep / sleep",
+                11: "Does / work / works",
+                12: "her / in ",
+                13: "Is not / his / is ",
+                14: "Are / I'm not",
+                15: "Are you a Lawyer?",
+                16: "Is / It is",
+                17: "Hello! My name is Roberto. I am an architect",
+                18: "went",
+                19: "was",
+                20: "traveled"
+            };
+
+            // Store all question texts
+            const questionTexts = {};
+            document.querySelectorAll('.question-container').forEach(container => {
+                const questionId = container.id;
+                const questionNumber = parseInt(questionId.split('-')[1]);
+                if (questionNumber <= 20) {
+                    const questionText = container.querySelector('h3').textContent;
+                    questionTexts[questionNumber] = questionText;
+                }
+            });
+
+            // Variables to track test state
+            let currentQuestion = 1;
+            const totalQuestions = 20;
+            window.userAnswers = {};
+            
+            // DOM elements
+            const studentInfo = document.getElementById('student-info');
+            const testProgress = document.getElementById('test-progress');
+            const testContent = document.getElementById('test-content');
+            const resultsSection = document.getElementById('results-section');
+            const startTestBtn = document.getElementById('start-test');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            
+            // Initialize the test
+            function initTest() {
+                // Hide all questions
+                document.querySelectorAll('.question-container').forEach(q => {
+                    q.classList.remove('active');
+                });
+                
+                // Show first question
+                document.getElementById('question-1').classList.add('active');
+                
+                // Update progress
+                updateProgress();
+                
+                // Setup option selection
+                setupOptionSelection();
+            }
+
+            // Start the test
+            startTestBtn.addEventListener('click', function() {
+                const studentName = document.getElementById('student-name').value.trim();
+                const studentId = document.getElementById('student-id').value.trim();
+                const teacherName = document.getElementById('teacher-name').value.trim();
+                
+                if (!studentName || !studentId || !teacherName) {
+                    alert('Please fill in all student information fields.');
+                    return;
+                }
+                
+                studentInfo.classList.add('hidden');
+                testProgress.classList.remove('hidden');
+                testContent.classList.remove('hidden');
+                
+                initTest();
+            });
+
+            // Setup option selection
+            function setupOptionSelection() {
+                document.querySelectorAll('.option').forEach(option => {
+                    option.addEventListener('click', function() {
+                        // Remove selected class from all options in the same question
+                        const questionId = this.closest('.question-container').id;
+                        const questionNumber = parseInt(questionId.split('-')[1]);
+                        
+                        document.querySelectorAll(`#${questionId} .option`).forEach(opt => {
+                            opt.classList.remove('selected');
+                        });
+                        
+                        // Add selected class to clicked option
+                        this.classList.add('selected');
+                        
+                        // Save the answer
+                        userAnswers[questionNumber] = this.getAttribute('data-value');
+                    });
+                });
+            }
+
+            // Update progress bar and text
+            function updateProgress() {
+                const progressPercentage = (currentQuestion / totalQuestions) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+                
+                // Update progress text
+                progressText.textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+                
+                // Update button states
+                prevBtn.disabled = currentQuestion === 1;
+                prevBtn.classList.toggle('opacity-50', currentQuestion === 1);
+                
+                if (currentQuestion === totalQuestions) {
+                    nextBtn.textContent = "Submit Test";
+                } else {
+                    nextBtn.textContent = "Next";
+                }
+            }
+
+            // Navigate to previous question
+            prevBtn.addEventListener('click', function() {
+                if (currentQuestion > 1) {
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                    currentQuestion--;
+                    document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                    updateProgress();
+                }
+            });
+
+            // Navigate to next question or submit test
+            nextBtn.addEventListener('click', function() {
+                if (currentQuestion < totalQuestions) {
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                    currentQuestion++;
+                    document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                    updateProgress();
+                } else {
+                    // Show results
+                    showResults();
+                }
+            });
+
+            // Show test results
+            function showResults() {
+                testProgress.classList.add('hidden');
+                testContent.classList.add('hidden');
+                resultsSection.classList.remove('hidden');
+                
+                // Display student info
+                document.getElementById('result-student-name').textContent = document.getElementById('student-name').value;
+                document.getElementById('result-student-id').textContent = document.getElementById('student-id').value;
+                document.getElementById('result-teacher-name').textContent = document.getElementById('teacher-name').value;
+                
+                // Display current date
+                const today = new Date();
+                document.getElementById('result-date').textContent = today.toLocaleDateString();
+                
+                // Calculate scores (5 points per question now, to equal 100)
+                let totalCorrect = 0;
+                for (let i = 1; i <= totalQuestions; i++) {
+                    if (userAnswers[i] === correctAnswers[i]) {
+                        totalCorrect++;
+                    }
+                }
+                const totalScore = totalCorrect * 5; 
+                
+                // Update score displays
+                document.getElementById('overall-score').textContent = `${totalScore}/100`;
+                document.getElementById('overall-progress').style.width = `${totalScore}%`;
+                
+                // Display detailed results
+                displayDetailedResults();
+            }
+
+            // Display detailed results
+            function displayDetailedResults() {
+                const detailsContainer = document.getElementById(`all-questions-details`);
+                detailsContainer.innerHTML = '';
+                
+                for (let i = 1; i <= totalQuestions; i++) {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'py-3 border-b border-gray-200 last:border-0';
+                    
+                    // Add the question text
+                    const questionTextDiv = document.createElement('div');
+                    questionTextDiv.className = 'mb-2 text-gray-700';
+                    questionTextDiv.textContent = questionTexts[i];
+                    
+                    const questionSpan = document.createElement('div');
+                    questionSpan.className = 'font-medium mb-1';
+                    questionSpan.textContent = `Question ${i} (5 points):`;
+                    
+                    const resultDiv = document.createElement('div');
+                    resultDiv.className = 'mt-1';
+                    
+                    if (!userAnswers[i]) {
+                        resultDiv.innerHTML = '<span class="text-gray-500">Not answered</span>';
+                    } else if (userAnswers[i] === correctAnswers[i]) {
+                        resultDiv.innerHTML = `<span class="text-green-600 font-medium">✓ Correct</span>
+                                              <div class="text-sm mt-1">Your answer: ${userAnswers[i]}) ${correctAnswerText[i]}</div>`;
+                    } else {
+                        resultDiv.innerHTML = `<span class="text-red-600 font-medium">✗ Incorrect</span>
+                                              <div class="text-sm mt-1">Your answer: ${userAnswers[i]}</div>
+                                              <div class="text-sm text-green-600">Correct answer: ${correctAnswers[i]}) ${correctAnswerText[i]}</div>`;
+                    }
+                    
+                    questionDiv.appendChild(questionSpan);
+                    questionDiv.appendChild(questionTextDiv);
+                    questionDiv.appendChild(resultDiv);
+                    detailsContainer.appendChild(questionDiv);
+                }
+            }
+
+            // Send results
+            document.getElementById('send-results').addEventListener('click', function () {
+                const formData = new URLSearchParams();
+                const studentName = document.getElementById('student-name').value;
+                const teacherEmail = document.getElementById('student-id').value;
+                const teacherName = document.getElementById('teacher-name').value;
+
+                formData.append("studentName", studentName);
+                formData.append("teacherEmail", teacherEmail);
+                formData.append("teacherName", teacherName);
+                formData.append("writing", ""); // No writing section
+                formData.append("sheetName", "Intern"); // Manteniendo el nombre de la hoja original
+
+                // Send 1-20
+                for (let i = 1; i <= 20; i++) {
+                    const answer = userAnswers[i] || "No answer";
+                    formData.append("q" + i, answer);
+                }
+
+                console.log("📤 Enviando respuestas del test...");
+
+                // Using the same original URL
+                fetch("https://script.google.com/macros/s/AKfycbwm2FADQlnIA1hJ1nDFDmpDVz7OzV_FitKCieCpqzZMyhJDlNH3239muPIY94nY3jlv/exec", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(() => {
+                    console.log("✅ Datos enviados");
+                    alert("✅ Resultados enviados correctamente.");
+                })
+                .catch(error => {
+                    console.error("❌ Error al enviar:", error);
+                    alert("❌ Ocurrió un error al enviar los resultados.");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
