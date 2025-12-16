@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager English Test (20 Questions)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a3b70;
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+        .question-container {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .option:hover {
+            background-color: #fff1ed;
+        }
+        .option.selected {
+            background-color: #ffcebf;
+            border-color: #ff683b;
+        }
+        .option.correct {
+            background-color: #bbf7d0;
+            border-color: #22c55e;
+        }
+        .option.incorrect {
+            background-color: #fecaca;
+            border-color: #ef4444;
+        }
+        .custom-orange {
+            color: #ff683b;
+        }
+        .custom-orange-bg {
+            background-color: #ff683b;
+        }
+        .custom-orange-hover:hover {
+            background-color: #e55a32;
+        }
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="logo-container">
+        <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="120" height="40" rx="8" fill="#ff683b"></rect>
+            <text x="60" y="25" font-family="Poppins, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DATO</text>
+        </svg>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div id="test-container">
+            <div id="student-info" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h1 class="text-3xl font-bold text-center custom-orange mb-6">Manager English Level Test</h1>
+                <p class="text-center text-gray-500 mb-6">20 Questions - Single Section</p>
+                <div class="space-y-4">
+                    <div class="flex flex-col">
+                        <label for="student-name" class="text-gray-700 font-medium mb-1">Nombre Aplicante:</label>
+                        <input type="text" id="student-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="student-id" class="text-gray-700 font-medium mb-1">Email Aplicante:</label>
+                        <input type="text" id="student-id" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="teacher-name" class="text-gray-700 font-medium mb-1">Nombre Asesor:</label>
+                        <input type="text" id="teacher-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <button id="start-test" class="w-full custom-orange-bg text-white font-medium py-2 px-4 rounded-md custom-orange-hover transition duration-300 mt-4">Start Test</button>
+                </div>
+            </div>
+
+            <div id="test-progress" class="bg-white rounded-lg shadow-lg p-6 mb-8 hidden">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 id="section-title" class="text-xl font-semibold custom-orange">General Knowledge</h2>
+                    <span id="progress-text" class="text-gray-600">Question 1 of 20</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="progress-bar custom-orange-bg h-2.5 rounded-full" style="width: 5%"></div>
+                </div>
+            </div>
+
+            <div id="test-content" class="hidden">
+                <div id="questions-section" class="space-y-8">
+                    
+                    <div id="question-1" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">1. Complete the sentences with the present continuous or the simple past: My family and I _____ next weekend. My mom ______ our luggage</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) traveled / prepared</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) are traveling / prepared</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) are traveling / is preparing</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) traveled / is preparing</div>
+                        </div>
+                    </div>
+
+                    <div id="question-2" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">2. Complete the sentences with the present continuous or the simple past: My boyfriend ____ the marathon last sunday </h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) ran</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) run</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) is running</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) runs</div>
+                        </div>
+                    </div>
+
+                    <div id="question-3" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">3. Complete the sentences with the present continuous or the simple past: Two weeks ago my parents ___ their 50th anniversary. I __ there 2 hours late because I was really busy</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) celebrated / get</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) are celebrating / got</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) are celebrating / am getting</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) celebrated / got</div>
+                        </div>
+                    </div>
+
+                    <div id="question-4" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">4. Complete the sentences with the present continuous or the simple past: My brother ____ his new apartment next week. </h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) bought</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) is buying</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) buys</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) are buying</div>
+                        </div>
+                    </div>
+
+                    <div id="question-5" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">5. Select the correct answers to complete the conversation: Last weekend I was home alone, and I went to the supermarket to buy (some/a) food to eat.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) some</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) a</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) some/a</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-6" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">6. Select the correct answers to complete the conversation: It was actually kind of easy! I spent a lot (the/of) time watchin YouTube videos and reading recipes. I think that helped me a lot
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) the</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) of</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) the/of</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-7" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">7. Select the correct answers to complete the conversation: B: Yeah, that make sense! Congratulations bro! You could give me (some/any) tips to cook my own pizza next time.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) some</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) any</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) some/any</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-8" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">8. Select the correct answers to complete the conversation: Don't worry, it's easy. You don't need (some/any) experience. Perhaps the (hardest/harder) part is kneading the dough, but that's it.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) some / hardest</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) some / harder</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) any / harder</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) any / hardest </div>
+                        </div>
+                    </div>
+
+                    <div id="question-9" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">9. Select the correct answers to complete the conversation: Perfect Thanks for the advice! Actually I think it's (cheaper / cheapest) to cook your own pizza than to buy it isn´t it?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) cheaper</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) cheapest</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) cheaper/cheapest</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-10" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">10. That's right! It´s (better / best) and sometimes even more delicious</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) better</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) best</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) better/best</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-11" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">11.Select the correct answers to complete the conversation: I think we should open (some/an) italian restaurant. What do you think? </h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) some</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) an</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) some/an</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-12" class="question-container bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-medium mb-4">12. Sorry I can’t go. I need to _____ the laundry </h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Make</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Have</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Try</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Do</div>
+                        </div>
+                    </div>
+
+                    <div id="question-13" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">13. I’m ____________ the game I have a lot of work</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) not go to watch</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) watching</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) not watching</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) going to watching</div>
+                        </div>
+                    </div>
+
+                   <div id="question-14" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">14. Complete the sentence:</h3>
+                        <p class="mb-2"><strong>A:</strong> ____ is your birthday?</p>
+                        <p><strong>B:</strong> Ah, it is __ June 30th.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) When / on</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) When / in</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) What / on</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Where / on</div>
+                        </div>
+                    </div>
+
+                    <div id="question-15" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">15. Complete the sentence:</h3>
+                        <p class="mb-2"><strong>A:</strong> What _____ _____ going to give your dad for his birthday?</p>
+                        <p><strong>B:</strong> I am  ______ to gift _____ a jersey from his favorite team.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) are / you / go / him</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) you  / are / going / him</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) are / you / going / he</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) are / you / going / him</div>
+                        </div>
+                    </div>
+
+                    <div id="question-16" class="question-container bg-white rounded-lg shadow-lg p-6">
+                       <h3 class="text-lg font-medium mb-4">16. Choose the correct past form of the verbs: Want, Go, Do, Sell, Buy</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Wont, Went, Did, Sold, Buyed</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Wanted, Went, Did, Selled, Buyed</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Wanted, Went, Did, Sold, Bought</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Wont, Went, Did, Sold, Bought</div>
+                        </div>
+                    </div>
+
+                    <div id="question-17" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">17. You 've eaten / ate in Marios's cafe haven't you? What was the food there / is the food there like?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) 've eaten / is the food there</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) ate / was the food there</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) ate / is the food there</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) 've eaten / was the food there</div>
+                        </div>
+                    </div>
+
+                    <div id="question-18" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">18. Yes I have/did The food was delicious</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) have</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) did</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) have/did</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+
+                    <div id="question-19" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">19. What do you think the new principal is going to be like / going to be</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) going to be like?</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) going to be?</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) No estoy segur@</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) is / isn't</div>
+                        </div>
+                    </div>
+
+                    <div id="question-20" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">20. I saw him in the morning and it seems that he might be/ might being very strict.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) might be</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) might being</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) No</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) No estoy segur@</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                    <button id="prev-btn" class="bg-gray-500 text-white font-medium py-2 px-6 rounded-md hover:bg-gray-600 transition duration-300">Previous</button>
+                    <button id="next-btn" class="custom-orange-bg text-white font-medium py-2 px-6 rounded-md custom-orange-hover transition duration-300">Next</button>
+                </div>
+            </div>
+
+            <div id="results-section" class="hidden bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-center custom-orange mb-6">Test Results</h2>
+                <div id="student-info-display" class="mb-6 p-4 bg-gray-50 rounded-md">
+                    <p><strong>Student Name:</strong> <span id="result-student-name"></span></p>
+                    <p><strong>Student's Email:</strong> <span id="result-student-id"></span></p>
+                    <p><strong>Teacher's Name:</strong> <span id="result-teacher-name"></span></p>
+                    <p><strong>Date:</strong> <span id="result-date"></span></p>
+                    <p><strong>Test Type:</strong> <span>Short Placement (20Q)</span></p>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Overall Score</h3>
+                        <span id="overall-score" class="text-xl font-bold custom-orange">0/100</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div id="overall-progress" class="custom-orange-bg h-4 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Detailed Results</h3>
+                    <div class="space-y-6">
+                        <div id="results-details" class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-medium mb-2">Answers</h4>
+                            <div id="all-questions-details" class="space-y-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button id="send-results" class="custom-orange-bg text-white font-medium py-2 px-6 rounded-md custom-orange-hover transition duration-300">Send Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Test data - Reduced to 20 Questions
+            const correctAnswers = {
+                1: "C", 2: "A", 3: "D", 4: "B", 5: "A", 
+                6: "B", 7: "A", 8: "D", 9: "D", 10: "B",
+                11: "B", 12: "D", 13: "D", 14: "A", 15: "D", 
+                16: "C", 17: "A", 18: "B", 19: "D", 20: "A"
+            };
+
+            // Full text of correct answers for 1-20
+            const correctAnswerText = {
+                1: "are traveling / is preparing",
+                2: "ran",
+                3: "celebrated / got",
+                4: "is buying",
+                5: "some",
+                6: "of",
+                7: "some",
+                8: "any / hardest ",
+                9: "cheaper",
+                10: "better",
+                11: "an",
+                12: "Do",
+                13: "not watching",
+                14: "When / on",
+                15: "are / you / going / him",
+                16: "Wanted, Went, Did, Sold, Bought",
+                17: "Don’t / Do",
+                18: "have",
+                19: "is / isn't",
+                20: "Martha and John are Japanese. Their grandparents are from Tokyo"
+            };
+
+            // Store all question texts
+            const questionTexts = {};
+            document.querySelectorAll('.question-container').forEach(container => {
+                const questionId = container.id;
+                const questionNumber = parseInt(questionId.split('-')[1]);
+                if (questionNumber <= 20) {
+                    const questionText = container.querySelector('h3').textContent;
+                    questionTexts[questionNumber] = questionText;
+                }
+            });
+
+            // Variables to track test state
+            let currentQuestion = 1;
+            const totalQuestions = 20;
+            window.userAnswers = {};
+            
+            // DOM elements
+            const studentInfo = document.getElementById('student-info');
+            const testProgress = document.getElementById('test-progress');
+            const testContent = document.getElementById('test-content');
+            const resultsSection = document.getElementById('results-section');
+            const startTestBtn = document.getElementById('start-test');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            
+            // Initialize the test
+            function initTest() {
+                // Hide all questions
+                document.querySelectorAll('.question-container').forEach(q => {
+                    q.classList.remove('active');
+                });
+                
+                // Show first question
+                document.getElementById('question-1').classList.add('active');
+                
+                // Update progress
+                updateProgress();
+                
+                // Setup option selection
+                setupOptionSelection();
+            }
+
+            // Start the test
+            startTestBtn.addEventListener('click', function() {
+                const studentName = document.getElementById('student-name').value.trim();
+                const studentId = document.getElementById('student-id').value.trim();
+                const teacherName = document.getElementById('teacher-name').value.trim();
+                
+                if (!studentName || !studentId || !teacherName) {
+                    alert('Please fill in all student information fields.');
+                    return;
+                }
+                
+                studentInfo.classList.add('hidden');
+                testProgress.classList.remove('hidden');
+                testContent.classList.remove('hidden');
+                
+                initTest();
+            });
+
+            // Setup option selection
+            function setupOptionSelection() {
+                document.querySelectorAll('.option').forEach(option => {
+                    option.addEventListener('click', function() {
+                        // Remove selected class from all options in the same question
+                        const questionId = this.closest('.question-container').id;
+                        const questionNumber = parseInt(questionId.split('-')[1]);
+                        
+                        document.querySelectorAll(`#${questionId} .option`).forEach(opt => {
+                            opt.classList.remove('selected');
+                        });
+                        
+                        // Add selected class to clicked option
+                        this.classList.add('selected');
+                        
+                        // Save the answer
+                        userAnswers[questionNumber] = this.getAttribute('data-value');
+                    });
+                });
+            }
+
+            // Update progress bar and text
+            function updateProgress() {
+                const progressPercentage = (currentQuestion / totalQuestions) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+                
+                // Update progress text
+                progressText.textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+                
+                // Update button states
+                prevBtn.disabled = currentQuestion === 1;
+                prevBtn.classList.toggle('opacity-50', currentQuestion === 1);
+                
+                if (currentQuestion === totalQuestions) {
+                    nextBtn.textContent = "Submit Test";
+                } else {
+                    nextBtn.textContent = "Next";
+                }
+            }
+
+            // Navigate to previous question
+            prevBtn.addEventListener('click', function() {
+                if (currentQuestion > 1) {
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                    currentQuestion--;
+                    document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                    updateProgress();
+                }
+            });
+
+            // Navigate to next question or submit test
+            nextBtn.addEventListener('click', function() {
+                if (currentQuestion < totalQuestions) {
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                    currentQuestion++;
+                    document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                    updateProgress();
+                } else {
+                    // Show results
+                    showResults();
+                }
+            });
+
+            // Show test results
+            function showResults() {
+                testProgress.classList.add('hidden');
+                testContent.classList.add('hidden');
+                resultsSection.classList.remove('hidden');
+                
+                // Display student info
+                document.getElementById('result-student-name').textContent = document.getElementById('student-name').value;
+                document.getElementById('result-student-id').textContent = document.getElementById('student-id').value;
+                document.getElementById('result-teacher-name').textContent = document.getElementById('teacher-name').value;
+                
+                // Display current date
+                const today = new Date();
+                document.getElementById('result-date').textContent = today.toLocaleDateString();
+                
+                // Calculate scores (5 points per question now, to equal 100)
+                let totalCorrect = 0;
+                for (let i = 1; i <= totalQuestions; i++) {
+                    if (userAnswers[i] === correctAnswers[i]) {
+                        totalCorrect++;
+                    }
+                }
+                const totalScore = totalCorrect * 5; 
+                
+                // Update score displays
+                document.getElementById('overall-score').textContent = `${totalScore}/100`;
+                document.getElementById('overall-progress').style.width = `${totalScore}%`;
+                
+                // Display detailed results
+                displayDetailedResults();
+            }
+
+            // Display detailed results
+            function displayDetailedResults() {
+                const detailsContainer = document.getElementById(`all-questions-details`);
+                detailsContainer.innerHTML = '';
+                
+                for (let i = 1; i <= totalQuestions; i++) {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'py-3 border-b border-gray-200 last:border-0';
+                    
+                    // Add the question text
+                    const questionTextDiv = document.createElement('div');
+                    questionTextDiv.className = 'mb-2 text-gray-700';
+                    questionTextDiv.textContent = questionTexts[i];
+                    
+                    const questionSpan = document.createElement('div');
+                    questionSpan.className = 'font-medium mb-1';
+                    questionSpan.textContent = `Question ${i} (5 points):`;
+                    
+                    const resultDiv = document.createElement('div');
+                    resultDiv.className = 'mt-1';
+                    
+                    if (!userAnswers[i]) {
+                        resultDiv.innerHTML = '<span class="text-gray-500">Not answered</span>';
+                    } else if (userAnswers[i] === correctAnswers[i]) {
+                        resultDiv.innerHTML = `<span class="text-green-600 font-medium">✓ Correct</span>
+                                              <div class="text-sm mt-1">Your answer: ${userAnswers[i]}) ${correctAnswerText[i]}</div>`;
+                    } else {
+                        resultDiv.innerHTML = `<span class="text-red-600 font-medium">✗ Incorrect</span>
+                                              <div class="text-sm mt-1">Your answer: ${userAnswers[i]}</div>
+                                              <div class="text-sm text-green-600">Correct answer: ${correctAnswers[i]}) ${correctAnswerText[i]}</div>`;
+                    }
+                    
+                    questionDiv.appendChild(questionSpan);
+                    questionDiv.appendChild(questionTextDiv);
+                    questionDiv.appendChild(resultDiv);
+                    detailsContainer.appendChild(questionDiv);
+                }
+            }
+
+            // Send results
+            document.getElementById('send-results').addEventListener('click', function () {
+                const formData = new URLSearchParams();
+                const studentName = document.getElementById('student-name').value;
+                const teacherEmail = document.getElementById('student-id').value;
+                const teacherName = document.getElementById('teacher-name').value;
+
+                formData.append("studentName", studentName);
+                formData.append("teacherEmail", teacherEmail);
+                formData.append("teacherName", teacherName);
+                formData.append("writing", ""); // No writing section
+                formData.append("sheetName", "Progressive"); // Manteniendo el nombre de la hoja original
+
+                // Send 1-20
+                for (let i = 1; i <= 20; i++) {
+                    const answer = userAnswers[i] || "No answer";
+                    formData.append("q" + i, answer);
+                }
+
+                console.log("📤 Enviando respuestas del test...");
+
+                // Using the same original URL
+                fetch("https://script.google.com/macros/s/AKfycbwm2FADQlnIA1hJ1nDFDmpDVz7OzV_FitKCieCpqzZMyhJDlNH3239muPIY94nY3jlv/exec", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(() => {
+                    console.log("✅ Datos enviados");
+                    alert("✅ Resultados enviados correctamente.");
+                })
+                .catch(error => {
+                    console.error("❌ Error al enviar:", error);
+                    alert("❌ Ocurrió un error al enviar los resultados.");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
