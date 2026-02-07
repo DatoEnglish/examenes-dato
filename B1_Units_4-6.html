@@ -1,0 +1,906 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Level Units 4-6 English Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #B0D9D1;
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+        .question-container {
+            display: none;
+        }
+        .active {
+            display: block;
+        } 
+        .option:hover {
+            background-color: #fff1ed;
+        }
+        .option.selected {
+            background-color: #ffcebf;
+            border-color: #ff683b;
+        }
+        .option.correct {
+            background-color: #bbf7d0;
+            border-color: #22c55e;
+        }
+        .option.incorrect {
+            background-color: #fecaca;
+            border-color: #ef4444;
+        }
+        .custom-orange {
+            color: #ff683b;
+        }
+        .custom-orange-bg {
+            background-color: #ff683b;
+        }
+        .custom-orange-border {
+            border-color: #ff683b;
+        }
+        .custom-orange-hover:hover {
+            background-color: #e55a32;
+        }
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+        @media print {
+            .logo-container {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-2\.5{height:0.625rem}.h-3{height:0.75rem}.h-4{height:1rem}.h-64{height:16rem}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-none{max-width:none}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.whitespace-pre-line{white-space:pre-line}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-500{--tw-bg-opacity:1;background-color:rgb(107 114 128 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-\[\#ff683b\]:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(255 104 59 / var(--tw-ring-opacity, 1))}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style><style type="text/css">:root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root ins.adsbygoogle[data-ad-client], :root img[src^="https://s-img.adskeeper.com/"], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-id-advertdfpconf], :root div[data-dfp-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-targeting], :root div[data-ad-region], :root div[data-ad-placeholder], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root div[id^="google_dfp_"], :root ad-slot, :root ad-shield-ads, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"] + .ob_source, :root a[href^="https://xbet-4.com/"], :root div[id^="ad-position-"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.effectiveratecpm.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://www.adxsrve.com/"], :root [data-template-type="nativead"], :root a[href^="https://www.endorico.com/Smartlink/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root bottomadblock, :root a[href^="https://s.zlinkd.com/"], :root a[href^="https://s.zlink3.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://s.eunow4u.com/"], :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root [href$="/sexdating.php"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root app-ad, :root [href^="https://ap.octopuspop.com/click/"] > img, :root a[href^="https://postback1win.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://streamate.com/landing/click/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://osfultrbriolenai.info/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://m.do.co/c/"] > img, :root a[href^="https://lead1.pl/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://identicaldrench.com/"], :root a[href^="https://hot-growngames.life/"], :root a[href^="https://helmethomicidal.com/"], :root a[href^="https://golinks.work/"], :root ark-top-ad, :root a[href^="https://s.zlinkn.com/"], :root a[href^="https://go.xxxvjmp.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root div[class$="-adlabel"], :root a[href^="https://go.xlviiirdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://zirdough.net/"], :root a[href^="https://s.deltraff.com/"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://ak.stikroltiltoowi.net/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://www.adskeeper.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://drumskilxoa.click/"], :root a[href^="https://dl-protect.net/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://clixtrac.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://clicks.pipaffiliates.com/"], :root app-advertisement, :root a[href^="https://getmatchedlocally.com/"], :root a[href^="https://clickins.slixa.com/"], :root a[href^="https://datewhisper.life/"], :root a[href^="https://get-link.xyz/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://combodef.com/"], :root a[href^="https://click.hoolig.app/"], :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://click.ggpickaff.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://t.ajrkm1.com/"], :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://black77854.com/"], :root a[href^="https://rixofa.com/"], :root #ads[style^="position: absolute; z-index: 30; width: 100%; height"], :root a[href^="https://disobediencecalculatormaiden.com/"], :root a[href^="https://best-experience-cool.com/"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ausoafab.net/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://aj1070.online/"], :root a[href^="https://bc.game/"], :root a[href^="https://ak.oalsauwy.net/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://a2.adform.net/"], :root a[href^="https://a.candyai.love/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://a.adtng.com/"], :root .banner-img > .pbl, :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root [id^="ad_slider"], :root a[href^="https://click.ggpickyaff.com/"], :root broadstreet-zone-container, :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://1winpb.com/"], :root div[id^="rc-widget-"], :root a[href^="http://eslp34af.click/"], :root a[href^="https://turnstileunavailablesite.com/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://eergortu.net/"], :root div[id^="optidigital-adslot"], :root a[href^="https://123-stream.org/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href^="http://www.h4trck.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://go.rmhfrtnd.com"], :root a[href^="https://allhost.shop/aff.php?"], :root [data-dynamic-ads], :root a[href^="http://vnte9urn.click/"], :root a[href^="http://troopsassistedstupidity.com/"], :root a[href^="http://trk.globwo.online/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root a[href^="http://roadcontagion.com/"], :root a[href^="http://premonitioninventdisagree.com/"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://myclick-2.com/"], :root [data-advadstrackid], :root a[href^="http://muzzlematrix.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="http://avthelkp.net/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://engine.flixtrial.com/"], :root [data-type="ad-vertical"], :root [data-taboola-options], :root a[href^="http://annulmentequitycereals.com/"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root a[href^="http://coefficienttolerategravel.com/"], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^="//ejitsirdosha.net/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root [data-cl-spot-id], :root a[href*="/jump/next.php?r="], :root a[href^="https://go.rmishe.com/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href*="//daichoho.com/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://lone-pack.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root a[href^="https://t.ajrkm3.com/"], :root [href^="https://aads.com/campaigns/"], :root a[href^="//stighoazon.com/"], :root [href^="https://www.profitablegatecpm.com/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root a[href*=".cfm?domain="][href*="&fp="], :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root a[data-url^="https://vulpix.bet/?ref="], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://go.xlivrdr.com"], :root [onclick^="location.href='https://1337x.vpnonly.site/"], :root [name^="google_ads_iframe"], :root [id^="section-ad-banner"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [id^="ad-wrap-"], :root [href^="https://zone.gotrackier.com/"], :root a[href^="http://sarcasmadvisor.com/"], :root [href^="https://www.restoro.com/"], :root [href^="https://www.targetingpartner.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root citrus-ad-wrapper, :root a[href^="https://go.grinsbest.com/"], :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://t.acam.link/"], :root a[href^="https://go.strpjmp.com/"], :root [href^="https://url.totaladblock.com/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root a[href^="https://bodelen.com/"], :root a[href*=".g2afse.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root [href^="https://join.playboyplus.com/track/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root [href^="https://cpa.10kfreesilver.com/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root div[ow-ad-unit-wrapper], :root a[data-href^="http://ads.trafficjunky.net/"], :root a[href^="http://partners.etoro.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root a[href^="https://camfapr.com/landing/click/"], :root div[data-ad-wrapper], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root [href="//sexcams.plus/"], :root [href^="http://www.mypillow.com/"] > img, :root a[href^="https://promerycergerful.com/"], :root #kt_player > a[target="_blank"], :root a[href^="http://bongacams.com/track?"], :root [href^="http://mypillow.com/"] > img, :root [href="https://ourgoldguy.com/contact/"] img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root a[href^="https://go.rmhfrtnd.com/"], :root [href="https://jdrucker.com/gold"] > img, :root a[href^="https://www.liquidfire.mobi/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [href^="https://go.xlrdr.com"], :root a[href^="https://s.cant3am.com/"], :root [data-testid^="taboola-"], :root a[href^="https://track.1234sd123.com/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://optimizedelite.com/"] > img, :root [data-name="adaptiveConstructorAd"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root a[href^="https://go.hpyjmp.com"], :root iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"], :root [href^="https://mystore.com/"] > img, :root a[href^="https://81ac.xyz/"], :root [href^="https://wct.link/click?"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://believessway.com/"], :root a[href^="https://witnessjacket.com/"], :root [data-mobile-ad-id], :root [class^="amp-ad-"], :root a[href^="http://handgripvegetationhols.com/"], :root a[href^="https://baipahanoop.net/"], :root a[href^="https://go.bbrdbr.com"], :root a[href^="https://fc.lc/ref/"], :root [data-adshim], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root #teaser1[style^="width:autopx;"], :root [href^="https://www.cloudways.com/en/?id"], :root [data-asg-ins], :root a[href^="https://gamingadlt.com/?offer="], :root [data-desktop-ad-id], :root [data-adbridg-ad-class], :root #teaser3[style^="width:autopx;"], :root [data-adblockkey], :root [data-block-type="ad"], :root [data-ad-width], :root [onclick*="content.ad/"], :root [data-ad-manager-id], :root AMP-AD, :root [data-ad-cls], :root [data-ez-name], :root a[href^="https://go.mnaspm.com/"], :root a[href^="https://service.bv-aff-trx.com/"], :root a[href^="https://6-partner.com/"], :root [class^="s2nPlayer"], :root a[href^="https://traffdaq.com/"], :root [data-testid="commercial-label-taboola"], :root [class^="div-gpt-ad"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="https://www8.smartadserver.com/"], :root a[href^="https://pb-imc.com/"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root [data-freestar-ad][id], :root AD-SLOT, :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root [data-ad-module], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root #teaser2[style^="width:autopx;"], :root [data-revive-zoneid], :root a[href^="https://losingoldfry.com/"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="https://wittered-mainging.com/"], :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"] { display: none !important; }</style></head>
+<body class="min-h-screen">
+    <!-- Logo Placeholder - Fixed position on all pages -->
+    <div class="logo-container">
+        <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="120" height="40" rx="8" fill="#ff683b"></rect>
+            <text x="60" y="25" font-family="Poppins, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DATO</text>
+        </svg>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div id="test-container">
+            <!-- Student Information Section -->
+            <div id="student-info" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h1 class="text-3xl font-bold text-center custom-orange mb-6">Junior Level Units 4-6 English Test</h1>
+                <div class="space-y-4">
+                    <div class="flex flex-col">
+                        <label for="student-name" class="text-gray-700 font-medium mb-1">Student Name:</label>
+                        <input type="text" id="student-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="student-id" class="text-gray-700 font-medium mb-1">Students's Email:</label>
+                        <input type="text" id="student-id" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="teacher-name" class="text-gray-700 font-medium mb-1">Teacher's Name:</label>
+                        <input type="text" id="teacher-name" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff683b]">
+                    </div>
+                    <button id="start-test" class="w-full custom-orange-bg text-white font-medium py-2 px-4 rounded-md custom-orange-hover transition duration-300 mt-4">Start Test</button>
+                </div>
+            </div>
+
+            <!-- Test Progress -->
+            <div id="test-progress" class="bg-white rounded-lg shadow-lg p-6 mb-8 hidden">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 id="section-title" class="text-xl font-semibold custom-orange">Vocabulary</h2>
+                    <span id="progress-text" class="text-gray-600">Question 1 of 31</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="progress-bar custom-orange-bg h-2.5 rounded-full" style="width: 3.2%"></div>
+                </div>
+                <div class="flex justify-between mt-2 text-sm text-gray-500">
+                    <span>Vocabulary</span>
+                    <span>Grammar</span>
+                    <span>Reading</span>
+                    <span>Writing</span>
+                </div>
+            </div>
+
+            <!-- Test Content -->
+            <div id="test-content" class="hidden">
+                <!-- Vocabulary Section -->
+                <div id="vocabulary-section" class="space-y-8">
+                    <div id="question-1" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">1. She felt very _____ when she saw the spider.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) fascinated</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) amused</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) frightened</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) embarrassed</div>
+                        </div>
+                    </div>
+
+                    <div id="question-2" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">2. Please _____ me know if you are coming to the meeting.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) arrange</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) remind</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) let </div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) forget</div>
+                        </div>
+                    </div>
+
+                    <div id="question-3" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">3. My keys _____ from my pocket while I was running.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) returned</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) fell off</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) appeared</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) discovered</div>
+                        </div>
+                    </div>
+
+                    <div id="question-4" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">4. I need to _____ my old friend from high school.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) get in touch with</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) drop</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) disappear</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) leave behind</div>
+                        </div>
+                    </div>
+
+                    <div id="question-5" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">5. He _____ me a ride to work because it was raining.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) figured out</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) gave</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) felt sorry for</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) showed</div>
+                        </div>
+                    </div>
+
+                    <div id="question-6" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">6. She spoke very _____ during the meeting.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) loudly</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) dangerously</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) angrily</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) politely </div>
+                        </div>
+                    </div>
+
+                    <div id="question-7" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">7. He crossed the street _____ and looked both ways.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) quietly</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) clearly</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) safely</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) correctly</div>
+                        </div>
+                    </div>
+
+                    <div id="question-8" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">8. Select the word that is NOT related to environmental problems.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Pollution</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Trash</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Smoke</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Space</div>
+                        </div>
+                    </div>
+
+                    <div id="question-9" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">9. Select the word that is NOT related to feelings.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Embarrassed</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Surprised</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Frightened</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Arrange </div>
+                        </div>
+                    </div>
+
+                    <div id="question-10" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">10. The car _____ on the highway, so we arrived late.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) showed</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) broke down</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) warned</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) took care of</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grammar Section -->
+                <div id="grammar-section" class="space-y-8">
+                    <div id="question-11" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">11. Look at those clouds. It ______ rain soon.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) will</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) is raining</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) is going to</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) rains</div>
+                        </div>
+                    </div>
+
+                    <div id="question-12" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">12. Wait, I ______ help you with those bags.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) am going to</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) will</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) am helping</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) help</div>
+                        </div>
+                    </div>
+
+                    <div id="question-13" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">13.  While I ______ dinner, the phone rang.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) cooked</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) was cooking</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C)  am cooking</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) cook</div>
+                        </div>
+                    </div>
+
+                   <div id="question-14" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">14.Choose the CORRECT sentence:</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) When I was driving, it started to rain</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) When I drove, it was raining start</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) While I drove, it was rain</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) When I was driving, it rains</div>
+                        </div>
+                    </div>
+
+                    <div id="question-15" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">15. The lights went out while we ______ TV.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) watched</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) are watching</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) were watching</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) watch</div>
+                        </div>
+                    </div>
+
+                    <div id="question-16" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">16.There are ______ people waiting outside </h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) little</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) much</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) a few</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) almost no</div>
+                        </div>
+                    </div>
+
+                    <div id="question-17" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">17. ______ of the students understood the explanation.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Almost</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Almost all</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Very</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Too</div>
+                        </div>
+                    </div>
+
+                    <div id="question-18" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">18. Complete the sentence:</h3>
+                        <p class="mb-2"><strong>A:</strong> The room is very cold.</p>
+                        <p><strong>B:</strong> I ______ close the window.</p>
+                        <div class="space-y-2 mt-6">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) am going to</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) will</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) am closing</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) closed</div>
+                        </div>
+                    </div>
+
+                    <div id="question-19" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">19. Choose the CORRECT sentence:</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) If it will rain, we stay home</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) If it rains, we’ll stay home</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) If it rain, we will stayed home</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) If it’s raining, we stayed home</div>
+                        </div>
+                    </div>
+
+                    <div id="question-20" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">20. If she studies harder, she ______ pass the exam.</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) passes</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) passed</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) will pass</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) is passing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reading Section -->
+                <div id="reading-section" class="space-y-8">
+                    <div id="reading-passage-1" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Reading Passage</h3>
+                        <div class="prose max-w-none space-y-4">
+                            <p>Last Friday, Tom was driving home from work after a long day. He was listening to the radio and thinking about his weekend plans when his car suddenly broke down on a quiet road outside the city. The engine stopped working, and Tom realized he was far from home and without help nearby.</p>
+                            <p>While Tom was waiting next to his car, he called his sister to explain what had happened. She warned him that the area was not very safe at night and told him to stay inside the car if possible. Tom felt sorry for worrying her, but he knew he was in trouble and needed advice.</p>
+                            <p>As he was checking his phone for a towing service, a coworker unexpectedly showed up. The coworker recognized Tom’s car and stopped to ask if everything was okay. Seeing the situation, he offered to give him a ride home, which Tom accepted gratefully.</p>
+                            <p>On the way home, they talked about work and about how important it is to take care of personal responsibilities. Tom realized that if he checks his car more often, he won’t face the same problem again. If he had waited longer, the situation could have become more dangerous.</p>
+                            <p>That experience taught Tom an important lesson. If people are prepared, they can avoid many problems, and if something unexpected happens, they will know how to react calmly.</p>
+                        </div>
+                    </div>
+
+                    <div id="question-21" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">21. What was Tom doing when his car broke down?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) He was talking on the phone</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) He was listening to the radio and thinking about his weekend</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) He was driving very fast</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) He was looking for a towing service</div>
+                        </div>
+                    </div>
+
+                    <div id="question-22" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">22. Why did Tom call his sister?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) To ask her for a ride</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) To complain about work</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) To explain what had happened and ask for advice</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) To tell her about his weekend plans</div>
+                        </div>
+                    </div>
+
+                    <div id="question-23" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">23. Where did Tom’s car break down?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) In the city center</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Near his office</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) On a quiet road outside the city</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) In front of his sister’s house</div>
+                        </div>
+                    </div>
+
+                    <div id="question-24" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">24. What does Tom realize about the future?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A)  If he takes care of his car, he won’t have the same problem again</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) He should buy a new car immediately</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) He will stop driving</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) If he waits longer, nothing will happen</div>
+                        </div>
+                    </div>
+
+                    <div id="question-25" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">25. What lesson did Tom learn from the experience?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Problems always get worse</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Being prepared helps avoid bigger problems</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Driving at night is dangerous</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Friends should always drive together</div>
+                        </div>
+                    </div>
+
+                    <div id="reading-passage-2" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Reading Passage</h3>
+                        <div class="prose max-w-none space-y-4">
+                            <p>Living in a big city can be exciting, but it also brings many challenges. Laura lives near the city center, where there is a lot of traffic and too much noise. Every morning, she has to deal with traffic jams and think about how to arrive at work on time.</p>
+                            <p>Recently, the city council announced new plans to improve the area. They want to look into the problems caused by pollution, trash, and smoke. If the city creates more green spaces, people will have cleaner air and less stress. However, if nothing changes, the situation is going to get worse.</p>
+                            <p>Laura often tries to get in touch with her neighbors to arrange community meetings. During these meetings, they talk about concrete buildings, graffiti, and the lack of public space. There is not enough room for children to play, and there are too many cars on the streets.</p>
+                            <p>Last week, Laura met up with a local organizer who asked her to remind people about the next meeting. She promised to let everyone know and check the details. If more residents participate, the neighborhood will become a better place to live.</p>
+                            <p>Laura believes that the future of the city depends on its people. If citizens take action, the city will improve. If they don’t, traffic, pollution, and trash are going to continue growing.</p>
+                        </div>
+                    </div>
+
+                    <div id="question-26" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">26. What is one main problem Laura faces every morning?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Lack of public space</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Too much traffic and traffic jams</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Graffiti on buildings</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Not enough meetings</div>
+                        </div>
+                    </div>
+
+                    <div id="question-27" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">27. What will happen if the city creates more green spaces?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) People are going to move away</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) There will be more traffic</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) People will have cleaner air and less stress</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Noise will increase</div>
+                        </div>
+                    </div>
+
+                    <div id="question-28" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">28. Why is there not enough space in the neighborhood?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Because there are too many cars</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Because there are many parks</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Because buildings are old</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Because people don’t participate</div>
+                        </div>
+                    </div>
+
+                    <div id="question-29" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">29. What will happen if more residents participate?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) The city is going to get noisier</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B"> B) Nothing will change</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) The neighborhood will become a better place</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Traffic jams will increase</div>
+                        </div>
+                    </div>
+
+                    <div id="question-30" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">30. What does Laura promise to do after meeting the local organizer?</h3>
+                        <div class="space-y-2">
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="A">A) Move to another city</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="B">B) Let everyone know and check the details</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="C">C) Cancel the meeting</div>
+                            <div class="option border border-gray-300 rounded-md p-3 cursor-pointer" data-value="D">D) Ignore the problem</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Writing Section -->
+                <div id="writing-section" class="space-y-8">
+                    <div id="question-31" class="question-container bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-lg font-medium mb-4">31. Write about an occasion you were doing something and a sudden problem appeared. Explain what were you doing and how did you solve the problem.</h3>
+                        <div class="space-y-4">
+                            <textarea id="writing-answer" class="w-full h-64 border border-gray-300 rounded-md p-4 focus:outline-none focus:ring-2 focus:ring-[#ff683b]" placeholder="Write your essay here..."></textarea>
+                            <p class="text-sm text-gray-500"> Do your best! Try to make your paragraph clear and complete.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between mt-8">
+                    <button id="prev-btn" class="bg-gray-500 text-white font-medium py-2 px-6 rounded-md hover:bg-gray-600 transition duration-300">Previous</button>
+                    <button id="next-btn" class="custom-orange-bg text-white font-medium py-2 px-6 rounded-md custom-orange-hover transition duration-300">Next</button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="hidden bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-center custom-orange mb-6">Progressive Level English Test Results</h2>
+                <div id="student-info-display" class="mb-6 p-4 bg-gray-50 rounded-md">
+                    <p><strong>Student Name:</strong> <span id="result-student-name"></span></p>
+                    <p><strong>Student's Email:</strong> <span id="result-student-id"></span></p>
+                    <p><strong>Teacher's Name:</strong> <span id="result-teacher-name"></span></p>
+                    <p><strong>Date:</strong> <span id="result-date"></span></p>
+                    <p><strong>Level:</strong> <span>Progressive</span></p>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">Overall Score</h3>
+                        <span id="overall-score" class="text-xl font-bold custom-orange">0/100</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div id="overall-progress" class="custom-orange-bg h-4 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-medium">Vocabulary</h4>
+                            <span id="vocabulary-score" class="font-bold">0/30</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="vocabulary-progress" class="h-3 rounded-full" style="width: 0%; background-color: #9AD7D0;"></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-medium">Grammar</h4>
+                            <span id="grammar-score" class="font-bold">0/30</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="grammar-progress" class="h-3 rounded-full" style="width: 0%; background-color: #76A8D4;"></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-medium">Reading</h4>
+                            <span id="reading-score" class="font-bold">0/30</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="reading-progress" class="h-3 rounded-full" style="width: 0%; background-color: #FFA388;"></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-medium">Writing</h4>
+                            <span id="writing-score" class="font-medium text-gray-500">10 points (Teacher review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Detailed Results</h3>
+                    <div class="space-y-6">
+                        <div id="vocabulary-results" class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-medium mb-2">Vocabulary Section</h4>
+                            <div id="vocabulary-details" class="space-y-2"></div>
+                        </div>
+                        <div id="grammar-results" class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-medium mb-2">Grammar Section</h4>
+                            <div id="grammar-details" class="space-y-2"></div>
+                        </div>
+                        <div id="reading-results" class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-medium mb-2">Reading Section</h4>
+                            <div id="reading-details" class="space-y-2"></div>
+                        </div>
+                        <div id="writing-results" class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-medium mb-2">Writing Section (10 points)</h4>
+                            <p class="text-gray-600">Your essay will be reviewed by your teacher.</p>
+                            <div class="mt-2 p-3 bg-white border border-gray-200 rounded-md">
+                                <p id="writing-submission" class="text-gray-800 whitespace-pre-line"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button id="send-results" class="custom-orange-bg text-white font-medium py-2 px-6 rounded-md custom-orange-hover transition duration-300">Send Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Test data
+            const correctAnswers = {
+                1: "B", 2: "A", 3: "D", 4: "D", 5: "A", 
+                6: "C", 7: "B", 8: "A", 9: "B", 10: "C",
+                11: "A", 12: "B", 13: "B", 14: "A", 15: "D", 
+                16: "C", 17: "C", 18: "A", 19: "B", 20: "D",
+                21: "C", 22: "B", 23: "B", 24: "C", 25: "A", 
+                26: "D", 27: "C", 28: "A", 29: "B", 30: "C"
+            };
+
+            // Full text of correct answers
+            const correctAnswerText = {
+                1: "Angry",
+                2: "Singer",
+                3: "Be born, Start School, Learn to Drive, Graduate from college, Get a Job, Retire",
+                4: "Borrow",
+                5: "Tired",
+                6: "Bouquet",
+                7: "Graduate",
+                8: "returned",
+                9: "Perfume, Candy, Purse, Jewelry, Speakers",
+                10: "lending",
+                11: "did / went",
+                12: "study / studied",
+                13: "They are study English",
+                14: "going to",
+                15: "are / you / going / him",
+                16: "We are not selling our house",
+                17: "Wanted, Went, Did, Sold, Bought",
+                18: "was / were / went / them",
+                19: "No, Some, Many, Most, All",
+                20: "Are / going / not / going",
+                21: "Saturday and Sunday",
+                22: "Because she helps him with English",
+                23: "Surprised and thankful",
+                24: "Because he wants to relax",
+                25: "His mother",
+                26: "She finished college and got a job",
+                27: "She shopped online every day",
+                28: "To buy a car",
+                29: "No, she didn’t",
+                30: "Her parents"
+            };
+
+            // Store all question texts
+            const questionTexts = {};
+            document.querySelectorAll('.question-container').forEach(container => {
+                const questionId = container.id;
+                const questionNumber = parseInt(questionId.split('-')[1]);
+                if (questionNumber <= 30) { // Skip writing question
+                    const questionText = container.querySelector('h3').textContent;
+                    questionTexts[questionNumber] = questionText;
+                }
+            });
+
+            // Variables to track test state
+            let currentQuestion = 1;
+            window.userAnswers = {};
+            let currentSection = "vocabulary";
+            
+            // DOM elements
+            const studentInfo = document.getElementById('student-info');
+            const testProgress = document.getElementById('test-progress');
+            const testContent = document.getElementById('test-content');
+            const resultsSection = document.getElementById('results-section');
+            const startTestBtn = document.getElementById('start-test');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            const sectionTitle = document.getElementById('section-title');
+            const readingPassage1 = document.getElementById('reading-passage-1');
+            const readingPassage2 = document.getElementById('reading-passage-2');
+
+            // Initialize the test
+            function initTest() {
+                // Hide all questions
+                document.querySelectorAll('.question-container').forEach(q => {
+                    q.classList.remove('active');
+                });
+                
+                // Show first question
+                document.getElementById('question-1').classList.add('active');
+                
+                // Hide reading passage initially
+                readingPassage1.style.display = 'none';
+                readingPassage2.style.display = 'none';
+                
+                // Update progress
+                updateProgress();
+                
+                // Setup option selection
+                setupOptionSelection();
+            }
+
+            // Start the test
+            startTestBtn.addEventListener('click', function() {
+                const studentName = document.getElementById('student-name').value.trim();
+                const studentId = document.getElementById('student-id').value.trim();
+                const teacherName = document.getElementById('teacher-name').value.trim();
+                
+                if (!studentName || !studentId || !teacherName) {
+                    alert('Please fill in all student information fields.');
+                    return;
+                }
+                
+                studentInfo.classList.add('hidden');
+                testProgress.classList.remove('hidden');
+                testContent.classList.remove('hidden');
+                
+                initTest();
+            });
+
+            // Setup option selection
+            function setupOptionSelection() {
+                document.querySelectorAll('.option').forEach(option => {
+                    option.addEventListener('click', function() {
+                        // Remove selected class from all options in the same question
+                        const questionId = this.closest('.question-container').id;
+                        const questionNumber = parseInt(questionId.split('-')[1]);
+                        
+                        document.querySelectorAll(`#${questionId} .option`).forEach(opt => {
+                            opt.classList.remove('selected');
+                        });
+                        
+                        // Add selected class to clicked option
+                        this.classList.add('selected');
+                        
+                        // Save the answer
+                        userAnswers[questionNumber] = this.getAttribute('data-value');
+                    });
+                });
+            }
+
+            // Update progress bar and text
+            function updateProgress() {
+                const progressPercentage = (currentQuestion / 31) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+                
+                // Update section title and manage reading passage visibility
+                if (currentQuestion <= 10) {
+                sectionTitle.textContent = "Vocabulary";
+                currentSection = "vocabulary";
+                readingPassage1.style.display = 'none';
+                readingPassage2.style.display = 'none';
+
+                } else if (currentQuestion <= 20) {
+                sectionTitle.textContent = "Grammar";
+                currentSection = "grammar";
+                readingPassage1.style.display = 'none';
+                readingPassage2.style.display = 'none';
+
+                } else if (currentQuestion <= 30) {
+                sectionTitle.textContent = "Reading";
+                currentSection = "reading";
+
+                // Oculta ambas lecturas siempre primero
+                readingPassage1.style.display = 'none';
+                readingPassage2.style.display = 'none';
+
+                        // Preguntas 21–25 → primera lectura
+                        if (currentQuestion >= 21 && currentQuestion <= 25) {
+                            readingPassage1.style.display = 'block';
+                                        }
+
+                        // Preguntas 26–30 → segunda lectura
+                        if (currentQuestion >= 26 && currentQuestion <= 30) {
+                            readingPassage2.style.display = 'block';
+                                        }
+
+                } else {
+                sectionTitle.textContent = "Writing";
+                currentSection = "writing";
+                readingPassage1.style.display = 'none';
+                readingPassage2.style.display = 'none';
+                        }
+                
+                // Update progress text
+                progressText.textContent = `Question ${currentQuestion} of 31`;
+                
+                // Update button states
+                prevBtn.disabled = currentQuestion === 1;
+                prevBtn.classList.toggle('opacity-50', currentQuestion === 1);
+                
+                if (currentQuestion === 31) {
+                    nextBtn.textContent = "Submit Test";
+                } else {
+                    nextBtn.textContent = "Next";
+                }
+            }
+
+            // Navigate to previous question
+            prevBtn.addEventListener('click', function() {
+                if (currentQuestion > 1) {
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                    currentQuestion--;
+                    document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                    updateProgress();
+                }
+            });
+
+            // Navigate to next question or submit test
+            nextBtn.addEventListener('click', function() {
+                if (currentQuestion < 31) {
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                    currentQuestion++;
+                    document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                    updateProgress();
+                } else {
+                    // Save writing answer
+                    const writingAnswer = document.getElementById('writing-answer').value;
+                    userAnswers[31] = writingAnswer;
+                    
+                    // Show results
+                    showResults();
+                }
+            });
+
+            // Show test results
+            function showResults() {
+                testProgress.classList.add('hidden');
+                testContent.classList.add('hidden');
+                resultsSection.classList.remove('hidden');
+                
+                // Display student info
+                document.getElementById('result-student-name').textContent = document.getElementById('student-name').value;
+                document.getElementById('result-student-id').textContent = document.getElementById('student-id').value;
+                document.getElementById('result-teacher-name').textContent = document.getElementById('teacher-name').value;
+                
+                // Display current date
+                const today = new Date();
+                document.getElementById('result-date').textContent = today.toLocaleDateString();
+                
+                // Calculate scores (3 points per question)
+                const vocabularyScore = calculateSectionScore(1, 10) * 3;
+                const grammarScore = calculateSectionScore(11, 20) * 3;
+                const readingScore = calculateSectionScore(21, 30) * 3;
+                const totalScore = vocabularyScore + grammarScore + readingScore + 10; // Writing is worth 10 points
+                
+                // Update score displays
+                document.getElementById('vocabulary-score').textContent = `${vocabularyScore}/30`;
+                document.getElementById('grammar-score').textContent = `${grammarScore}/30`;
+                document.getElementById('reading-score').textContent = `${readingScore}/30`;
+                document.getElementById('overall-score').textContent = `${totalScore}/100`;
+                
+                // Update progress bars
+                document.getElementById('vocabulary-progress').style.width = `${(vocabularyScore / 30) * 100}%`;
+                document.getElementById('grammar-progress').style.width = `${(grammarScore / 30) * 100}%`;
+                document.getElementById('reading-progress').style.width = `${(readingScore / 30) * 100}%`;
+                document.getElementById('overall-progress').style.width = `${totalScore}%`;
+                
+                // Display detailed results
+                displayDetailedResults('vocabulary', 1, 10);
+                displayDetailedResults('grammar', 11, 20);
+                displayDetailedResults('reading', 21, 30);
+                
+                // Display writing submission
+                document.getElementById('writing-submission').textContent = userAnswers[31] || "No answer provided.";
+            }
+
+            // Calculate score for a section
+            function calculateSectionScore(start, end) {
+                let score = 0;
+                for (let i = start; i <= end; i++) {
+                    if (userAnswers[i] === correctAnswers[i]) {
+                        score++;
+                    }
+                }
+                return score;
+            }
+
+            // Display detailed results for a section
+            function displayDetailedResults(section, start, end) {
+                const detailsContainer = document.getElementById(`${section}-details`);
+                detailsContainer.innerHTML = '';
+                
+                for (let i = start; i <= end; i++) {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'py-3 border-b border-gray-200 last:border-0';
+                    
+                    // Add the question text
+                    const questionTextDiv = document.createElement('div');
+                    questionTextDiv.className = 'mb-2 text-gray-700';
+                    questionTextDiv.textContent = questionTexts[i];
+                    
+                    const questionSpan = document.createElement('div');
+                    questionSpan.className = 'font-medium mb-1';
+                    questionSpan.textContent = `Question ${i} (3 points):`;
+                    
+                    const resultDiv = document.createElement('div');
+                    resultDiv.className = 'mt-1';
+                    
+                    if (!userAnswers[i]) {
+                        resultDiv.innerHTML = '<span class="text-gray-500">Not answered</span>';
+                    } else if (userAnswers[i] === correctAnswers[i]) {
+                        resultDiv.innerHTML = `<span class="text-green-600 font-medium">✓ Correct</span>
+                                              <div class="text-sm mt-1">Your answer: ${userAnswers[i]}) ${correctAnswerText[i]}</div>`;
+                    } else {
+                        resultDiv.innerHTML = `<span class="text-red-600 font-medium">✗ Incorrect</span>
+                                              <div class="text-sm mt-1">Your answer: ${userAnswers[i]}</div>
+                                              <div class="text-sm text-green-600">Correct answer: ${correctAnswers[i]}) ${correctAnswerText[i]}</div>`;
+                    }
+                    
+                    questionDiv.appendChild(questionSpan);
+                    questionDiv.appendChild(questionTextDiv);
+                    questionDiv.appendChild(resultDiv);
+                    detailsContainer.appendChild(questionDiv);
+                }
+            }
+
+            // Send results
+            document.getElementById('send-results').addEventListener('click', function () {
+    const formData = new URLSearchParams();
+    const studentName = document.getElementById('student-name').value;
+    const teacherEmail = document.getElementById('student-id').value;
+    const teacherName = document.getElementById('teacher-name').value;
+    const writing = userAnswers[31] || "";
+
+    formData.append("studentName", studentName);
+    formData.append("teacherEmail", teacherEmail);
+    formData.append("teacherName", teacherName);
+    formData.append("writing", writing);
+    formData.append("sheetName", "Units 4-6");
+
+
+    for (let i = 1; i <= 30; i++) {
+        const answer = userAnswers[i] || "No answer";
+        formData.append("q" + i, answer);
+    }
+
+    console.log("📤 Enviando respuestas del test...");
+
+    fetch("https://script.google.com/macros/s/AKfycbziPm03nEAVLIVWbjwpgVhf-NIXJQy53suZXZlLDhFqv72KCXxdUt7yeYThF3gKeFSqhA/exec", {
+        method: "POST",
+        body: formData
+    })
+    .then(() => {
+        console.log("✅ Datos enviados");
+        alert("✅ Resultados enviados correctamente.");
+    })
+    .catch(error => {
+        console.error("❌ Error al enviar:", error);
+        alert("❌ Ocurrió un error al enviar los resultados.");
+    });
+});
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94b3916633096d82',t:'MTc0OTE2NzM4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+<script src="script_envia_respuestas.js"></script>
+
+</body></html>
